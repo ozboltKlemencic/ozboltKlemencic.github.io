@@ -123,6 +123,7 @@
     }
   
     .nav-menu{
+      z-index: 1000000000000;
       position: fixed;
       left: -100%;
       top: 70px;
