@@ -62,11 +62,17 @@
     margin: 0 auto;
   }
   
-  .navbar{
+  .navbar {
+    position: fixed; /* Namesto sticky uporabite fixed */
+    top: 0;
+    left: 0;
+    right: 0; /* Zagotovite, da se razteza po celotni širini */
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-1); /* Dodajte barvo ozadja, če je potrebno */
+    z-index: 1000; /* Da bo nad ostalimi elementi */
   }
   
   .nav-branding{
