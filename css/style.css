@@ -1,0 +1,280 @@
+@import "variables.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/* -------------------------------------- HERO ---------------------------------------------------------*/
+.banner-image {
+  height: 80vh;
+  background-image: url(../assets/img/garage.jpg);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-card{
+  display: flex;
+  justify-content: center; 
+  
+  
+  width: inherit;
+  height: inherit;
+  backdrop-filter: blur(8px); 
+  background-color: transparent;
+}
+
+.content-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner {
+  display: flex;
+  justify-content: flex-start; 
+  justify-content: center; 
+}
+
+.banner-content {
+  width: 70vw; 
+  padding: 20px; 
+}
+
+.banner-content p {
+  margin-top: 10px; 
+}
+
+.banner button {
+  margin-top: 20px; 
+}
+
+.banner-content h1 {
+  color: var(--black-font);
+  font-size: 4.2rem;
+  line-height: 1.2em;
+}
+
+.banner-content p {
+  color: var(--grey-font);
+  font-size: 1.2rem;
+}
+
+/* -------------------------------------- SERVICES ---------------------------------------------------------*/
+
+section.services{
+  background-color: var(--color-1);
+  padding: 0 10vw 0 10vw;
+  overflow: hidden;
+}
+
+section.services h2{
+  text-align: center;
+}
+
+section.services p{
+  text-align: center;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 10px 20px; /* row-gap column gap */
+}
+
+/*card*/
+.card {
+  max-width: 500px;
+  min-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  margin: 2rem 0 2rem 0;
+}
+
+.card a {
+  text-decoration: none
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  background-color: var(--color-3);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: var(--color-4);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+/* end card */
+
+
+/* -------------------------------------- ABOUT ---------------------------------------------------------*/
+section.about{
+  background-color: white;
+  height: 50vh;
+}
+
+section.about h2{
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+section.about p{
+  text-align: center;
+  padding: 0.3rem 0 0.3rem 0;
+}
+
+/* -------------------------------------- TESTIMONIALS ---------------------------------------------------------*/
+section.testimonials {
+  background-color: var(--color-4);
+  text-align: center;
+}
+
+section.testimonials h2 {
+  padding: 2rem 0 0 0;
+}
+
+section.testimonials p {
+  padding: 0.3rem 0;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Horizontalno poravnava elemente na sredino */
+  gap: 20px; /* Razmik med elementi */
+}
+
+.testimonial {
+  max-width: 500px; /* Nastavimo največjo širino za posamezni pregled */
+  margin: auto; /* Poravnava na sredino */
+}
+
+blockquote {
+  margin: 10px 10px 0;
+  background: #efefef;
+  padding: 20px 60px;
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+blockquote:before,
+blockquote:after {
+  content: "\201C";
+  position: absolute;
+  font-size: 80px;
+  line-height: 1;
+  color: #000000;
+  font-style: normal;
+}
+
+blockquote:before {
+  top: 0;
+  left: 10px;
+}
+
+blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -0.5em;
+}
+
+.testimonial div {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #efefef;
+  margin: 0 0 0 60px;
+}
+
+.testimonial p {
+  margin: 8px 0 0 20px;
+  text-align: left;
+  color: #fff;
+}
+
+/* -------------------------------------- CONTACT ---------------------------------------------------------*/
+
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Horizontalno poravnava elemente na sredino */
+  align-items: center;
+  gap: 7vw;
+
+  height: 70vh;
+
+  background-color: var(--color-4);
+  color: var(--color-1);
+}
+
+article.map-container{
+  border: 2.5rem solid var(--color-1);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 60vh;
+  width: 30vw;
+}
+iframe{
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+
+
+
+
+

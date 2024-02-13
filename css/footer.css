@@ -1,0 +1,18 @@
+@import "variables.css";
+
+footer img{
+    width: 10vw;
+    height: 9vh;
+  }
+  
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontalno poravnava elemente na sredino */
+    align-items: center;
+    column-gap: 7vw;
+
+    height: 40vh;
+}
+  
+  
