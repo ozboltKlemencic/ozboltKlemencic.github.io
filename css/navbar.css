@@ -126,6 +126,6 @@ Additional color(s): RGB(191, 175, 160), RGB(217, 203, 192)
     }
 
     .navbar{
-      justify-content: space-between;
+      justify-content: space-around;
     }
 }
