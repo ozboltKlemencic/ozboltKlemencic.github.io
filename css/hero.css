@@ -1,0 +1,79 @@
+.hero-section {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('dominik-lange-AavxWqRBG5M-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.content-card {
+    width: 70%; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(120deg, 
+    RGBa(191, 175, 160, 0.6) 60%, 
+    transparent 30% );
+}
+
+.content-card h1{
+    color: RGB(249, 246, 239);
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 4rem;
+
+    margin: 0 0 0 17vw;
+}
+
+.content-card p{
+    color: #3a3a3a;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.5rem;
+
+    margin: 0 0 0 17vw;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    width: 40%;
+    max-width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .content-card {
+        width: 100%;
+        background: linear-gradient(
+            RGBa(191, 175, 160, 0.6) 100%, 
+            transparent 30% );
+    }
+
+    .content-card h1{
+        font-size: 4rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .content-card p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        width: 90%;
+        max-width: 90%;
+    }
+}
