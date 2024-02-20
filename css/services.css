@@ -1,4 +1,7 @@
-
+:root {
+    --cards-total-height: 0px; /* Začetna vrednost */
+}
+  
 .card-section{
     position: relative;
     margin-top: -5vh;
@@ -90,7 +93,7 @@ section.services .services-btn a{
 
 @media screen and (max-width: 768px) {
     .card-section{
-        margin-bottom: calc(6*30vh - 5vh);
+        margin-bottom: calc(var(--cards-total-height) + 5vh);
         width: 100%;
         padding: 0;
     }
