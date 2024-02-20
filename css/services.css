@@ -1,3 +1,4 @@
+
 .card-section{
     position: relative;
     margin-top: -5vh;
@@ -11,13 +12,15 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center; 
+    align-items: start; 
     gap: 2rem;
 }
 
 .card-section .card{
     width: 25vw;
-    height: 30vh;
+    
+    height: auto;
+
 
     border: 1px solid rgb(228, 228, 228);
 
@@ -30,7 +33,7 @@
     height: 40%;
     width: 100%;
     background-color: rgb(217, 203, 192);
-
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +50,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    overflow: hidden;
     padding:1.2rem ;
 }
 
@@ -65,6 +68,7 @@
     font-weight: 300;
     color: #3a3a3a;
     text-align: center;
+    width: 100%;
 }
 
 section.services .services-btn{
@@ -87,9 +91,12 @@ section.services .services-btn a{
 @media screen and (max-width: 768px) {
     .card-section{
         margin-bottom: calc(6*30vh - 5vh);
+        width: 100%;
+        padding: 0;
     }
     .card-section .card{
-        width: 90vw;
-        height: 30vh;
+        width: 100%;
+        height: auto;
+        margin: 0 2vw 0 2vw;
     }
 }
