@@ -38,18 +38,16 @@ for (let n of counters) {
 
 // ----------------------------------------------------------------------------------------------------------- card height
 // Pridobitev vseh kartic z razredom .card
-var cards = document.getElementsByClassName('card');
+window.onload = function() {
+    var cards = document.getElementsByClassName('card');
 
-var totalHeight = 0;
+    var totalHeight = 0;
 
-// Seštevanje višin vseh kartic
-for (var i = 0; i < cards.length; i++) {
-    totalHeight += cards[i].offsetHeight;
+    for (var i = 0; i < cards.length; i++) {
+        totalHeight += cards[i].offsetHeight;
+    }
+    document.documentElement.style.setProperty('--cards-total-height', `${totalHeight}px`);
+    console.log('Skupna višina vseh kartic: ', totalHeight + 'px');
 }
 
-// Zdaj, ko imate skupno višino, lahko to vrednost uporabite
-// na primer za dinamično nastavitev spodnjega roba nekega drugega elementa
-// ali pa jo preprosto izpišete v konzolo za preverjanje
-document.documentElement.style.setProperty('--cards-total-height', `${totalHeight}px`);
-console.log('Skupna višina vseh kartic: ', totalHeight + 'px');
 
