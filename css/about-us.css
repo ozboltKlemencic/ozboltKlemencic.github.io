@@ -1,0 +1,98 @@
+.about-us-container{
+  display: flex;
+  justify-content: center; /* horizontalno*/
+  align-items: center; /* vertikalno*/
+  flex-direction: row;
+
+  margin:5vh 0 0 0;
+  padding: 2rem 0;
+  height: 40vh;
+
+  background-color: rgb(224, 196, 170);
+}
+
+.about-us-container .about-description{
+  text-align: left;
+  width: 30vw;
+}
+
+.about-us-container .about-description h2{
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 3rem;
+  padding: 0 0 0.8rem 0;
+}
+
+.about-us-container .about-description p{
+  font-family: "Fanwood Text", serif;
+  padding: 0 0 0.8rem 0;
+}
+
+.about-us-container .about-description button{
+  font-family: "Fanwood Text", serif;
+  margin: 0 0 0.8rem 0;
+  padding: 0.2rem 0.7rem;
+  background-color: rgb(224, 196, 170);
+  border: 2px solid white;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px rgb(150, 129, 110); 
+  transition: all 0.5s ease;
+}
+
+.about-us-container .about-description button:hover{
+  background-color: rgb(172, 143, 115);
+}
+
+.about-us-container .about-description button:active{
+  box-shadow: 0 1px rgb(150, 129, 110);
+  transform: translateY(3px); 
+}
+
+
+
+.about-us-container .image-container{
+  width: 50vh;
+  height: 80%;
+  overflow: hidden;
+  margin: 0 0 0 5vw;
+
+  display: flex;
+  justify-content: center; /* horizontalno*/
+  align-items: center; /* vertikalno*/
+}
+
+.about-us-container .image-container img{
+  max-height: 100%;
+  max-width: auto; 
+  display: block; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-us-container{
+    height: 70vh;
+    flex-direction: column;
+  }
+
+  .about-us-container .about-description{
+    text-align: center;
+    width: 80vw;
+  }
+
+  .about-us-container .about-description p{
+    width: 100%;
+  }
+
+  .about-us-container .about-description button{
+    margin: 0 0 0.8rem 0;
+    width: 50%;
+    text-align: center;
+  }
+
+  .about-us-container .image-container{
+    height: 50vh;
+    width: 80%;
+    margin: 0;
+    margin-bottom: 2vh;
+    }
+}
